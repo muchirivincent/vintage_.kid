@@ -1,0 +1,37 @@
+import random
+
+# Sample grid and words
+grid = [
+    ["Ũ", "Ĩ", "R", "Ũ", "Ũ", "M", "B", "I", "R", "Ĩ"],
+    ["Ĩ", "M", "W", "A", "Ĩ", "H", "Ĩ", "M", "Ú", "N"],
+    ["G", "Ũ", "I", "K", "Ũ", "Ũ", "A", "K", "W", "I"],
+    ["G", "W", "Ĩ", "M", "Ĩ", "Ĩ", "Ú", "M", "Ú", "N"],
+    ["Ĩ", "M", "M", "B", "Ú", "Ĩ", "M", "W", "Ú", "I"],
+    ["N", "Ú", "Ũ", "W", "G", "G", "A", "W", "Ú", "N"],
+    ["R", "Ĩ", "G", "M", "Ú", "M", "W", "R", "W", "I"],
+    ["Ũ", "W", "Ĩ", "M", "W", "N", "M", "Ĩ", "M", "Ú"],
+    ["I", "M", "W", "N", "Ú", "Ũ", "I", "K", "I", "G"],
+    ["Ũ", "Ú", "R", "Ĩ", "W", "M", "R", "W", "M", "W"]
+]
+
+words = ["MŨRATA", "MAITU", "ŨKWĨ", "MŨTARA", "MBARI", "MĨGWI", "MWĨA", "MŨRĨMI", "ŨTÛ", "MŨTI", "MBEERE", "MĨANYA"]
+
+# Function to display grid
+def display_grid(grid):
+    for row in grid:
+        print(" ".join(row))
+
+# Function to display words
+def display_words(words):
+    print("\nWords to find:")
+    for word in words:
+        print(word)
+
+# Main game loop
+def main():
+    print("Welcome to Mũrata Wa Maitũ!")
+    display_grid(grid)
+    display_words(words)
+
+if __name__ == "__main__":
+    main()
